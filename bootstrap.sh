@@ -41,9 +41,9 @@ function bootstrap() {
   # TODO
   # ln -sfn dotfiles/config/nvim/init.vim $HOME/.config/nvim/init.vim
   # ln -sfn dotfiles/config/kitty/kitty.conf $HOME/.config/kitty/kitty.conf
-  # ln -sfn dotfiles/config/zsh/.zailiases $HOME/.config/zsh/.zaliases
-  # ln -sfn dotfiles/config/zsh/.zshrc $HOME/.config/zsh/.zshrc
-  # ln -sfn dotfiles/config/zsh/functions $HOME/.config/zsh/functions
+  ln -sfn dotfiles/zsh/.zailiases $HOME/.zaliases
+  ln -sfn dotfiles/zsh/.zshrc $HOME/.zshrc
+  ln -sfn dotfiles/zsh/functions $HOME/.functions
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
