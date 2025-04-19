@@ -44,12 +44,11 @@ fpath+=("/usr/local/share/zsh/site-functions")
 # auto-complete and syntax
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-completions"
+plug "zsh-users/zsh-syntax-highlighting"
 plug "zsh-users/zsh-history-substring-search"
-
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-plug "zsh-users/zsh-syntax-highlighting"
 
 # help info on tab
 plug "zap-zsh/supercharge"
@@ -58,10 +57,6 @@ plug "Aloxaf/fzf-tab"
 
 # ls
 plug "zap-zsh/exa"
-#
-#
-# # prompt
-plug "mafredri/zsh-async"
 
 # git
 plug "chivalryq/git-alias"
@@ -77,4 +72,5 @@ source $ZDOTDIR/.zaliases
 autoload -Uz compinit
 compinit
 
+# prompt
 eval "$(starship init zsh)"
